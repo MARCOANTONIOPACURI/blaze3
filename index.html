@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLAZE</title>
+
+  <!-- Fuentes de respaldo (se usan solo si no está el archivo de Australian Mirage) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+<link rel="icon" href="BLAZE/icon.png">
+</head>
+<body>
+
+  <main id="stage" aria-label="Presentación BLAZE">
+    <canvas id="dust"></canvas>
+    <img id="wm" alt="" hidden>
+
+    <div id="slides"></div>
+
+    <div class="grain"></div>
+    <div class="vignette"></div>
+    <div class="flash" id="flash"></div>
+
+    <div class="hud">
+      <button id="prev" class="nav" aria-label="Anterior">&#8592;</button>
+      <div id="dots" class="dots"></div>
+      <button id="mute" class="nav" aria-label="Silenciar música">&#9834;</button>
+      <button id="fs" class="nav" aria-label="Pantalla completa">&#9974;</button>
+    </div>
+
+    <div id="hint" class="hint">haz clic para continuar</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

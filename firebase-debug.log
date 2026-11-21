@@ -1,0 +1,60 @@
+[debug] [2026-11-21T18:41:39.359Z] ----------------------------------------------------------------------
+[debug] [2026-11-21T18:41:39.361Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MARCO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-11-21T18:41:39.362Z] CLI Version:   15.28.1
+[debug] [2026-11-21T18:41:39.362Z] Platform:      win32
+[debug] [2026-11-21T18:41:39.362Z] Node Version:  v20.17.0
+[debug] [2026-11-21T18:41:39.362Z] Detected Agent: unknown
+[debug] [2026-11-21T18:41:39.362Z] Time:          Sat Nov 21 2026 13:41:39 GMT-0500 (hora estándar de Perú)
+[debug] [2026-11-21T18:41:39.362Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-21T18:41:39.424Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-11-21T18:41:49.525Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-21T18:41:49.525Z] > authorizing via signed-in user (pacurimarco3@gmail.com)
+[debug] [2026-11-21T18:41:49.525Z] [iam] checking project mrcproyect-f0342 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-11-21T18:41:49.526Z] Checked if tokens are valid: false, expires at: 1787541955367
+[debug] [2026-11-21T18:41:49.526Z] Checked if tokens are valid: false, expires at: 1787541955367
+[debug] [2026-11-21T18:41:49.527Z] > refreshing access token with scopes: []
+[debug] [2026-11-21T18:41:49.530Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-11-21T18:41:49.530Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-11-21T18:41:49.932Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-11-21T18:41:49.932Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2026-11-21T18:41:50.180Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-11-21T18:41:50.180Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-11-21T18:41:50.192Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mrcproyect-f0342:testIamPermissions [none]
+[debug] [2026-11-21T18:41:50.193Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mrcproyect-f0342:testIamPermissions  x-goog-user-project=mrcproyect-f0342
+[debug] [2026-11-21T18:41:50.193Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mrcproyect-f0342:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-21T18:41:50.891Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mrcproyect-f0342:testIamPermissions 200
+[debug] [2026-11-21T18:41:50.891Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mrcproyect-f0342:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-21T18:41:50.892Z] Checked if tokens are valid: true, expires at: 1795290109180
+[debug] [2026-11-21T18:41:50.892Z] Checked if tokens are valid: true, expires at: 1795290109180
+[debug] [2026-11-21T18:41:50.892Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mrcproyect-f0342 [none]
+[debug] [2026-11-21T18:41:51.416Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mrcproyect-f0342 200
+[debug] [2026-11-21T18:41:51.416Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mrcproyect-f0342 {"projectId":"mrcproyect-f0342","projectNumber":"893445518711","displayName":"MrcProyect","name":"projects/mrcproyect-f0342","resources":{"hostingSite":"mrcproyect-f0342","realtimeDatabaseInstance":"mrcproyect-f0342-default-rtdb"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_d854d39d-2794-4ade-8d33-f5ffe9abc19f"}
+[info] 
+[info] === Deploying to 'mrcproyect-f0342'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-11-21T18:41:51.420Z] Checked if tokens are valid: true, expires at: 1795290109180
+[debug] [2026-11-21T18:41:51.420Z] Checked if tokens are valid: true, expires at: 1795290109180
+[debug] [2026-11-21T18:41:51.420Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mrcproyect-f0342/sites/mrcproyect-f0342 [none]
+[debug] [2026-11-21T18:41:52.445Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mrcproyect-f0342/sites/mrcproyect-f0342 200
+[debug] [2026-11-21T18:41:52.445Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mrcproyect-f0342/sites/mrcproyect-f0342 {"name":"projects/mrcproyect-f0342/sites/mrcproyect-f0342","defaultUrl":"https://mrcproyect-f0342.web.app","appId":"1:893445518711:web:058db3fa3363f56bdb1d72","type":"DEFAULT_SITE"}
+[debug] [2026-11-21T18:41:52.450Z] Checked if tokens are valid: true, expires at: 1795290109180
+[debug] [2026-11-21T18:41:52.450Z] Checked if tokens are valid: true, expires at: 1795290109180
+[debug] [2026-11-21T18:41:52.451Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mrcproyect-f0342/versions [none]
+[debug] [2026-11-21T18:41:52.451Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mrcproyect-f0342/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-11-21T18:41:52.959Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mrcproyect-f0342/versions 200
+[debug] [2026-11-21T18:41:52.959Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mrcproyect-f0342/versions {"name":"projects/893445518711/sites/mrcproyect-f0342/versions/1d8074c03c79aa44","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[mrcproyect-f0342]: beginning deploy... 
+[info] i  hosting[mrcproyect-f0342]: found 390043 files in . 
+[debug] [2026-11-21T18:44:28.943Z] [hosting] uploading with 200 concurrency
+[debug] [2026-11-21T18:44:28.944Z] [hosting] hash cache [] not populated
+[debug] [2026-11-21T18:44:29.071Z] Error: EBUSY: resource busy or locked, open 'C:\Users\MARCO\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-11-21T18:44:29.073Z] Error: EBUSY: resource busy or locked, open 'C:\Users\MARCO\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-11-21T18:44:29.074Z] Error: EBUSY: resource busy or locked, open 'C:\Users\MARCO\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
